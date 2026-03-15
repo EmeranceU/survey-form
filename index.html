@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootcamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Bootcamp Survey Form</h1>
+      <p id="description">
+        Help us improve the SheCanCode bootcamp experience by sharing your
+        honest feedback below.
+      </p>
+
+      <form id="survey-form">
+        <!-- Name Field -->
+        <label id="name-label" for="name">Full Name <span class="required">*</span></label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <!-- Email Field -->
+        <label id="email-label" for="email">Email Address <span class="required">*</span></label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+
+        <!-- Number Field -->
+        <label id="number-label" for="number">Age</label>
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter your age"
+          min="16"
+          max="65"
+        />
+
+        <!-- Dropdown -->
+        <label for="dropdown">Which cohort are you in?</label>
+        <select id="dropdown">
+          <option value="">-- Select your cohort --</option>
+          <option value="cohort-1">Cohort 1</option>
+          <option value="cohort-2">Cohort 2</option>
+          <option value="cohort-3">Cohort 3</option>
+          <option value="cohort-4">Cohort 4</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p class="group-label">
+          How would you rate your bootcamp experience so far?
+        </p>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="experience" value="excellent" />
+            Excellent
+          </label>
+          <label>
+            <input type="radio" name="experience" value="good" />
+            Good
+          </label>
+          <label>
+            <input type="radio" name="experience" value="average" />
+            Average
+          </label>
+          <label>
+            <input type="radio" name="experience" value="needs-improvement" />
+            Needs Improvement
+          </label>
+        </div>
+
+        <!-- Checkboxes -->
+        <p class="group-label">
+          Which topics have you enjoyed the most? (Select all that apply)
+        </p>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" value="html-css" />
+            HTML &amp; CSS
+          </label>
+          <label>
+            <input type="checkbox" value="javascript" />
+            JavaScript
+          </label>
+          <label>
+            <input type="checkbox" value="react" />
+            React
+          </label>
+          <label>
+            <input type="checkbox" value="node" />
+            Node.js
+          </label>
+          <label>
+            <input type="checkbox" value="git" />
+            Git &amp; GitHub
+          </label>
+        </div>
+
+        <!-- Textarea -->
+        <label for="comments"
+          >Any suggestions to improve the bootcamp?</label
+        >
+        <textarea
+          id="comments"
+          rows="5"
+          placeholder="Share your feedback about the bootcamp..."
+        ></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </body>
+</html>
