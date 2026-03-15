@@ -25,3 +25,24 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
+
+/* Title & Description */
+#title {
+  text-align: center;
+  font-size: 28px;
+  color: #4a3f8a;
+  margin-bottom: 8px;
+}
+
+#description {
+  text-align: center;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* ===== Form Layout ===== */
+#survey-form {
+  display: grid;
+}
