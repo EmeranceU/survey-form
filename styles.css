@@ -93,3 +93,37 @@ textarea:focus {
 select {
   cursor: pointer;
 }
+.radio-group,
+.checkbox-group {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 6px;
+  padding-left: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #667eea;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
